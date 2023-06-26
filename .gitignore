@@ -1,0 +1,10 @@
+/ChatGptApp/bin/*
+/ChatGptApp/obj/*
+/ChatGptApp/.vs/*
+/ChatGptApp/Platforms
+/ChatGptApp/Properties
+/ChatGptApp/Resources
+
+/.vs/*
+/bin/*
+/obj/*

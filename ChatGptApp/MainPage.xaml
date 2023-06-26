@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatGptApp.MainPage">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto, Auto, *"
+              ColumnDefinitions="*, Auto"
+              RowSpacing="10"
+              ColumnSpacing="10"
+              Padding="30,0"
+              Margin="10">
+
+            <Label
+                Text="Talk to AI"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Grid.ColumnSpan="2"/>
+
+            <Entry
+                x:Name="TextBox"
+                Placeholder="Type here"
+                SemanticProperties.Hint="Type to talk to ChatGPT"
+                Grid.Row="1" Grid.ColumnSpan="1"/>
+
+            <Button
+                x:Name="EnterBtn"
+                Text="Enter"
+                Clicked="OnEnterClicked"
+                Grid.Row="1" Grid.Column="1"/>
+
+            <Label
+                x:Name="RLabel"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="Center"/>
+            
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>
+
