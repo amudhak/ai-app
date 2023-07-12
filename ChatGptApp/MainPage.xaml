@@ -12,6 +12,7 @@
               Margin="10">
 
             <Label
+                x:Name="TLabel"
                 Text="Talk to AI"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
@@ -21,7 +22,6 @@
             <Entry
                 x:Name="TextBox"
                 Placeholder="Type here"
-                SemanticProperties.Hint="Type to talk to ChatGPT"
                 Grid.Row="1" Grid.ColumnSpan="1"/>
 
             <Button
@@ -33,7 +33,9 @@
             <Label
                 x:Name="RLabel"
                 SemanticProperties.HeadingLevel="Level2"
+                Text=""
                 FontSize="18"
+                Grid.Row="2"
                 HorizontalOptions="Center"/>
             
         </Grid>

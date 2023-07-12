@@ -19,12 +19,13 @@ public static class MauiProgram
 
         builder.Services.AddChatGpt(options =>
 			{
-            
-				options.UseOpenAI(apiKey: "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",
-					organization: "org-bzcCAbw91CwmEYdtmxt0VAZg");
 
+				options.UseOpenAI(apiKey: "{YOUR API KEY HERE}",
+				                organization: "{YOUR ORGANIZATION ID HERE");
+				//options.ApiKey = "<your-api-key-here>";
+				//options.Organization = null; // Optional
 				options.DefaultModel = OpenAIChatGptModels.Gpt35Turbo;
-			    options.MessageLimit = 16;  // Default: 10
+			    options.MessageLimit = 10;  // Default: 10
 			    options.MessageExpiration = TimeSpan.FromMinutes(5);    // Default: 1 hour
 			});
 

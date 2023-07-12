@@ -43,5 +43,3 @@ public partial class MainPage : ContentPage
     private Guid _sessionGuid = Guid.Empty;
 
 }
-
-
